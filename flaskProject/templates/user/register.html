@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    
+</head>
+<body>
+    <h1>用户注册</h1>
+    <form action="{{url_for('user.register')}}" method="POST"> 
+        <p><input type="text" name="username" placeholder="用户名"> </p>
+        <p><input type="password"name="password" placeholder="密码"> </p>
+        <p><input type="password"name="repassword" placeholder="确认密码"> </p>
+        <p><input type="text"name="phone" placeholder="手机号码"> </p>
+        <p><input type="submit"name="用户注册" placeholder="用户名"> </p>
+    </form>
+
+
+    
+
+<script type="importmap">
+  {
+    "imports": {
+      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+    }
+  }
+</script>
+
+<script type="module">
+    import { createApp } from 'vue'
+
+    createApp({
+        data() {
+            return {
+                message: 'Hello World!'
+            }
+        }
+    }).mount('#app')
+</script>
+
+<div id="app">
+    <h1>{{ message }}</h1>
+</div>
+
+
+</body>
+</html>

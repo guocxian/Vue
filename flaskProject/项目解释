@@ -1,0 +1,6 @@
+
+1.数据库终端使用命令
+(1).python app.py db init ------->产生一个miggrations文件，一个项目init一次
+(2).pytohn app.py db migrate -------->又自动产生一个版本文件,记录模型的修改
+(3).pytohn app.py db upgrade  -------->产生数据库，downgrade根据版本对数据库降级
+
